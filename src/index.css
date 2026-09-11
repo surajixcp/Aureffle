@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Cinzel', 'Cormorant Garamond', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  --color-gold-50: #faf6eb;
+  --color-gold-100: #f4ecce;
+  --color-gold-200: #e8d799;
+  --color-gold-300: #dcbfa6;
+  --color-gold-400: #d4af37;
+  --color-gold-500: #c6a252;
+  --color-gold-600: #a98436;
+  --color-gold-700: #886526;
+  --color-gold-800: #6a4c1e;
+  --color-gold-900: #4a3415;
+
+  --color-navy-950: #050811;
+  --color-navy-900: #080d1a;
+  --color-navy-850: #0c1426;
+  --color-navy-800: #101c34;
+  --color-navy-750: #142442;
+  --color-navy-700: #1b2f56;
+  --color-navy-600: #26437a;
+  
+  --color-cream-50: #fcfbf9;
+  --color-cream-100: #f7f4ee;
+  --color-cream-200: #ede8dc;
+  --color-cream-300: #ded5c0;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #080d1a;
+    color: #f4f1ea;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+
+  .font-brand {
+    font-family: var(--font-display);
+    letter-spacing: 0.15em;
+  }
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080d1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b2f56;
+  border-radius: 4px;
+  border: 1px solid rgba(198, 162, 82, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c6a252;
+}
+
+/* Glassmorphism & Gold accents */
+.luxury-glass {
+  background: rgba(12, 20, 38, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(198, 162, 82, 0.18);
+}
+
+.luxury-glass-light {
+  background: rgba(20, 36, 66, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(198, 162, 82, 0.12);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fff2cc 0%, #d4af37 40%, #c6a252 70%, #f4ecce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px -5px rgba(198, 162, 82, 0.15);
+}
+
+.gold-border-glow:hover {
+  box-shadow: 0 0 35px 0px rgba(198, 162, 82, 0.3);
+}
+
+/* Subtle luxury grain / vignette */
+.cafe-ambient-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(38, 67, 122, 0.25) 0%, rgba(8, 13, 26, 0) 70%);
+}
+
+/* Neon Yellow Glowing Typography & Effects (Strictly Text Glow, No BG Box) */
+@keyframes neonYellowTextPulse {
+  0%, 100% {
+    text-shadow:
+      0 0 3px #ffffff,
+      0 0 8px #ffe600,
+      0 0 16px #ffe600,
+      0 0 28px #eab308,
+      0 3px 12px rgba(0, 0, 0, 0.95);
+  }
+  50% {
+    text-shadow:
+      0 0 5px #ffffff,
+      0 0 12px #ffff44,
+      0 0 22px #ffe600,
+      0 0 34px #facc15,
+      0 3px 12px rgba(0, 0, 0, 0.95);
+  }
+}
+
+@keyframes cursorBlinkAnimation {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.font-neon-stylish {
+  font-family: 'Cinzel Decorative', 'Cinzel', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans Tamil', serif;
+}
+
+.neon-yellow-glowing-text {
+  color: #fffde6;
+  animation: neonYellowTextPulse 2.8s ease-in-out infinite;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.neon-cursor-yellow {
+  display: inline-block;
+  width: 4px;
+  height: 1.02em;
+  background-color: #ffe600;
+  margin-left: 6px;
+  vertical-align: baseline;
+  box-shadow: 0 0 10px #ffe600, 0 0 20px #ffe600, 0 0 30px #facc15;
+  animation: cursorBlinkAnimation 0.85s infinite;
+  border-radius: 1px;
+}
+
+.neon-glass-badge {
+  background: rgba(10, 16, 32, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 230, 0, 0.35);
+  box-shadow: 0 0 20px rgba(255, 230, 0, 0.15), inset 0 0 15px rgba(255, 230, 0, 0.08);
+}
+
+/* Marquee Keyframe Animations */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap, 1rem)));
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap, 1rem)));
+  }
+}
+
+.animate-marquee {
+  animation: marquee var(--duration, 40s) linear infinite;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration, 40s) linear infinite;
+}
+
+/* 3D Transform Helpers */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+

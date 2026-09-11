@@ -1,0 +1,48 @@
+import { Review } from '@/types/review';
+
+export const REVIEWS: Review[] = [
+  {
+    id: 'rev-1',
+    author: 'Chef Julien Royer',
+    roleOrPublication: 'Gastronomy Critic & 3-Star Michelin Curator',
+    avatar: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=300&auto=format&fit=crop',
+    rating: 5,
+    content: 'Aureffle achieves what few can: elevating the cafe experience into the realm of fine dining. Their Panama Geisha extraction is pristine, and the lamination on the croissants rival the premier boulangeries of Saint-Germain-des-Prés.',
+    date: 'February 2026',
+    favoriteDish: 'Panama Hacienda Geisha & AOP Croissant',
+    source: 'Tatler Dining',
+  },
+  {
+    id: 'rev-2',
+    author: 'Eleanor Vance',
+    roleOrPublication: 'Senior Culinary Editor, Singapore Gourmet Gazette',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300&auto=format&fit=crop',
+    rating: 5,
+    content: 'The 24K Aureffle Gold Velvet Latte paired with their Périgord Truffle Scramble is the most decadent morning ritual in Marina Bay. The interior acoustic design and velvet warmth make you forget the city outside entirely.',
+    date: 'January 2026',
+    favoriteDish: '24K Aureffle Gold Velvet Latte',
+    source: 'Singapore Gourmet Gazette',
+  },
+  {
+    id: 'rev-3',
+    author: 'Kenji Takahashi',
+    roleOrPublication: 'Master Q-Grader & Roaster Judge',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&auto=format&fit=crop',
+    rating: 5,
+    content: 'The precision of their Kyoto 16-hour slow drip is extraordinary. The floral clarity and lingering sweetness showcase meticulous water curation and flawless roast profiles. A masterclass in specialty coffee.',
+    date: 'January 2026',
+    favoriteDish: 'Kyoto 16-Hour Slow Cold Drip',
+    source: 'Michelin Guide Inspector',
+  },
+  {
+    id: 'rev-4',
+    author: 'Dr. Sophia & Marcus Tan',
+    roleOrPublication: 'Private Vault Patron & Connoisseur Club',
+    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=300&auto=format&fit=crop',
+    rating: 5,
+    content: 'We celebrated our 10th anniversary in The Aureffle Private Vault. The dedicated sommelier pairing and bespoke tasting menu exceeded every expectation. An unmatched jewel in Singapore.',
+    date: 'December 2025',
+    favoriteDish: 'Miyazaki A5 Wagyu Katsu Sando & L’Opéra Royal',
+    source: 'Verified Guest',
+  },
+];

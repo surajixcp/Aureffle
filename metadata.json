@@ -1,0 +1,8 @@
+{
+  "name": "Aureffle Cafe — Luxury Artisanal Coffee & Dining",
+  "description": "A high-end Singapore luxury cafe offering artisanal specialty coffees, gourmet French-Japanese patisserie, elevated brunch, and private table reservations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

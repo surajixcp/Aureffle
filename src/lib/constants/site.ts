@@ -1,0 +1,38 @@
+export const SITE_CONFIG = {
+  name: 'Aureffle',
+  legalName: 'Aureffle Cafe Pte. Ltd.',
+  tagline: 'Artisanal Dessert Café & Roastery',
+  subtitle: 'A Sanctuary of Refined Taste in Kampong Glam',
+  dietary: '100% Muslim-Owned Establishment',
+  location: {
+    address: '26 Kandahar Street',
+    district: 'Kampong Glam Historic District',
+    city: 'Singapore 198888',
+    mrt: 'Bugis MRT (EW12/DT14) Exit B & Jalan Besar MRT (DT22)',
+    valet: 'Street parking along Kandahar St & Sultan Gate carpark',
+    phone: '+65 9824 5542',
+    altPhone: '+65 8024 1955',
+    conciergeEmail: 'hello@aureffle.com',
+    reservationsEmail: 'reservations@aureffle.com',
+    instagram: '@aureffle',
+    googleMapsUrl: 'https://maps.app.goo.gl/fTGqJkgAF7er3emy8',
+  },
+  operatingHours: [
+    { days: 'Tuesday – Thursday', hours: '01:30 PM – 10:00 PM', kitchenCloses: '9:15 PM' },
+    { days: 'Friday – Saturday', hours: '02:00 PM – 12:00 AM (Midnight)', kitchenCloses: '11:15 PM' },
+    { days: 'Sunday', hours: '02:00 PM – 10:00 PM', kitchenCloses: '9:15 PM' },
+    { days: 'Monday', hours: 'Closed', kitchenCloses: '-' },
+  ],
+  socials: {
+    instagram: 'https://instagram.com/aureffle',
+    facebook: 'https://facebook.com/aureffle',
+    googleMaps: 'https://maps.app.goo.gl/fTGqJkgAF7er3emy8',
+    whatsapp: 'https://wa.me/6598245542',
+  },
+  stats: [
+    { label: 'Signature Waffwich Flavors', value: '12+' },
+    { label: 'Artisanal Gelato Scoops', value: '16+' },
+    { label: 'Muslim-Owned Heritage', value: '100%' },
+    { label: 'Specialty Roasts Served', value: '5,000+/mo' },
+  ],
+};
